@@ -1,0 +1,5 @@
+127.0.0.1 - - [15/May/2019:16:47:52 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [15/May/2019:16:47:52 +0900] "GET /HelloWorld_PJ01/HelloWorldServlet HTTP/1.1" 200 115
+0:0:0:0:0:0:0:1 - - [15/May/2019:16:49:00 +0900] "GET /HelloWorld_PJ01/HelloWorldServlet HTTP/1.1" 200 115
+0:0:0:0:0:0:0:1 - - [15/May/2019:16:49:08 +0900] "GET /HelloWorld_PJ01/HelloWorldServlet HTTP/1.1" 200 115
+0:0:0:0:0:0:0:1 - - [15/May/2019:16:49:09 +0900] "GET /favicon.ico HTTP/1.1" 404 1041
