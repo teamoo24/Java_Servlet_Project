@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>サーブレットへのデータ送信</title>
+</head>
+<body>
+<h1>サーブレットへのデータ送信</h1>
+<form action="RequestRecv" method="GET">
+<p>好きなゲームは</p>
+<input type="TEXT" name="GAME" size=40>
+<p>初めて購入したハードは?</p>
+<input type="checkbox" name="Hard" value="ファミコン">ファミコン<br/>
+<input type="checkbox" name="Hard" value="スーパーファミコン">スーパーファミコン<br/>
+<input type="checkbox" name="Hard" value="セガせターン">セガせターン<br/>
+<input type="checkbox" name="Hard" value="プレーステーション">プレーステーション<br/>
+</form>
+</body>
+</html>

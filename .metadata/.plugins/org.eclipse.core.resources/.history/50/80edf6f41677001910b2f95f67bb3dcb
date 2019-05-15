@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>サーブレットへのデータ送信</title>
+</head>
+<body>
+<h1>サーブレットへのデータ送信</h1>
+<form action="RequestRecv" method="GET">
+<p>好きなゲームは</p>
+<input type="TEXT">
+</form>
+</body>
+</html>

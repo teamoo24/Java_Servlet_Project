@@ -38,8 +38,8 @@ public class SampleFilter implements Filter {
 		// place your code here
 		request.setCharacterEncoding("UTF-8");
 	    response.setContentType("text/html; charset=UTF-8");
-		// pass the request along the filter chain
-		chain.doFilter(request, response);
+	    // pass the request along the filter chain
+	    chain.doFilter(request, response);
 	}
 
 	/**

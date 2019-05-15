@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/Users/kyungsoohan/Documents/project/eclipse_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/kyungsoohan/Documents/project/eclipse_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/HelloWorld_PJ01" path="/HelloWorld_PJ01" reloadable="false" source="org.eclipse.jst.jee.server:HelloWorld_PJ01"/></Host>
+      <Context docBase="/Users/kyungsoohan/Documents/project/eclipse_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/kyungsoohan/Documents/project/eclipse_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/HelloWorld_PJ01" path="/HelloWorld_PJ01" reloadable="false" source="org.eclipse.jst.jee.server:HelloWorld_PJ01"/><Context docBase="/Users/kyungsoohan/Documents/project/eclipse_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/RequestRecvPJ" path="/RequestRecvPJ" reloadable="false" source="org.eclipse.jst.jee.server:RequestRecvPJ"/></Host>
     </Engine>
   </Service>
 </Server>
