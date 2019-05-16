@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -31,9 +32,10 @@ public class RequestRecv extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 	    response.setContentType("text/html; charset=UTF-8");
 
-		String gameName = request.getParameter("GAME");
-		String hardName = request.getParameter("Hard");
-
+		String gameName = request.getParameter("Game");
+		Cookie cookGameTitle =  new Cookie("GameTitle",gameName);
+		cookGameTitle.setMaxAge(60*60*24);
+	    response.addCookie(cookGameTitle);
 
 		PrintWriter out = response.getWriter();
 
@@ -45,7 +47,13 @@ public class RequestRecv extends HttpServlet {
 	    out.println("<body>");
 	    out.println("<h1>あなたの回答</h1>");
 	    out.println("好きなゲームは" + gameName + "です。");
-	    out.println("初めて購入したハードは" + hardName + "です。");
+	    out.println("では、そのゲームの好きなナンバリングは？<br />");
+	    out.println("<form action=\"SampleGetCookie\" method=\"POST\">");
+	    out.println("<input type=\"TEXT\" name=\"GameNumbering\" size=40>");
+	    out.println("<input type=\"submit\" value=\"次のサーブレットを起動\">");
+	    out.println("</form>");
+
+
 	    out.println("</body>");
 		out.println("</html>");
 	}
