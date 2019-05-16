@@ -3,12 +3,14 @@
 
 #Macのポートの締め方
 
-ポート番号 1080 の場合
+        --ポート番号 1080 の場合
 
-lsof -i -P | grep 1080
-ヒットしたら表示されます。
+                lsof -i -P | grep 1080
 
-java  5328 narikei 5u IPv6 0x1d1d1d1d1d1d1d1d1d 0t0  TCP *:1080 (LISTEN)
-PIDが分かったのでKILL
+        --ヒットしたら表示されます。
 
-kill -9 5328
+                java  5328 narikei 5u IPv6 0x1d1d1d1d1d1d1d1d1d 0t0  TCP *:1080 (LISTEN)
+
+        --PIDが分かったのでKILL
+
+                kill -9 5328
