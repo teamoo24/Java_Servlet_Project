@@ -33,3 +33,17 @@
 0:0:0:0:0:0:0:1 - - [16/May/2019:12:37:03 +0900] "GET /RequestRecvPJ/RequestRecv?Game=%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC HTTP/1.1" 500 2072
 0:0:0:0:0:0:0:1 - - [16/May/2019:12:37:51 +0900] "GET /RequestRecvPJ/RequestRecv?Game=Aaaa HTTP/1.1" 200 376
 0:0:0:0:0:0:0:1 - - [16/May/2019:12:37:54 +0900] "POST /RequestRecvPJ/SampleGetCookie HTTP/1.1" 200 198
+127.0.0.1 - - [16/May/2019:19:27:17 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:27:17 +0900] "GET /RequestRecvPJ/SampleGetSession.html HTTP/1.1" 200 329
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:27:20 +0900] "GET /RequestRecvPJ/SampleSessionCtl? HTTP/1.1" 404 1079
+127.0.0.1 - - [16/May/2019:19:28:51 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:28:53 +0900] "GET /RequestRecvPJ/SampleSessionCtl? HTTP/1.1" 200 194
+127.0.0.1 - - [16/May/2019:19:29:48 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:49 +0900] "GET /RequestRecvPJ/SampleGetSession.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:51 +0900] "GET /RequestRecvPJ/SampleSessionCtl? HTTP/1.1" 200 272
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:54 +0900] "GET /RequestRecvPJ/SampleSessionGetServlet HTTP/1.1" 200 275
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:55 +0900] "GET /RequestRecvPJ/SampleSessionCtl HTTP/1.1" 200 272
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:56 +0900] "GET /RequestRecvPJ/SampleSessionGetServlet HTTP/1.1" 200 275
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:57 +0900] "GET /RequestRecvPJ/SampleSessionCtl HTTP/1.1" 200 272
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:57 +0900] "GET /RequestRecvPJ/SampleSessionGetServlet HTTP/1.1" 200 275
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:58 +0900] "GET /RequestRecvPJ/SampleSessionCtl HTTP/1.1" 200 272
