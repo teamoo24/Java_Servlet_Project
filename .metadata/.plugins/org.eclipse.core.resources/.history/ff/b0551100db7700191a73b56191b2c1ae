@@ -36,13 +36,9 @@ public class SampleSessionGetServlet extends HttpServlet {
 	    String userName = "";
 	    String gameName = "";
 
-	    HttpSession session = request.getSession();
-	    userName = (String)session.getAttribute("UserName");
-	    gameName = (String)session.getAttribute("GameName");
-
-
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
+	    HttpSession session = request.getSession();
 
 	    out.println("<html>");
 	    out.println("<head>");
@@ -50,8 +46,7 @@ public class SampleSessionGetServlet extends HttpServlet {
 	    out.println("</head>");
 	    out.println("<body>");
 	    out.println("<h1>セッションIDの取得(ページ2)</h1>");
-	    out.println("<p>あなたの名前は「"+ userName +"」です。</p>");
-	    out.println("<p>好きなゲームは「"+ gameName +"」です。</p>");
+	    out.println("<p>あなたの名前は</p>");
 	    out.println("<p>セッションIDは「" + session.getId() + "」です。</p>");
 	    out.println("<a href=\"SampleSessionCtl\">前のサーブレットに戻る</a>");
 	    out.println("</body>");

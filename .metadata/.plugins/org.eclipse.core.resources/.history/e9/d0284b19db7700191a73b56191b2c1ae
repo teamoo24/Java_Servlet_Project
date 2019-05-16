@@ -10,7 +10,7 @@
 <p>あなたの名前は?</p>
 <input type="TEXT" name="UserName" size=40>
 <p>好きなゲームは?</p>
-<input type="TEXT" name="GameName" size=40><br/><br/>
+<input type="TEXT" name="UserName" size=40><br/><br/>
 <input type="submit" value="サーブレットの呼び出し">
 </form>
 </body>

@@ -2,11 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>セッション管理サーブレットサンプル</title>
+<title>セッション管理サーブレットサンプル(データ受け渡し)</title>
 </head>
 <body>
-<h1>セッション管理サーブレットサンプル</h1>
+<h1>セッション管理サーブレットサンプル(データ受け渡し)</h1>
 <form action="SampleSessionCtl" method="GET">
+<p>あなたの名前は?</p>
+<input type="TEXT" name="UserName" size=40>
+<p>好きなゲームは?</p>
+<input type="TEXT" name="GameName" size=40><br/><br/>
 <input type="submit" value="サーブレットの呼び出し">
 </form>
 </body>

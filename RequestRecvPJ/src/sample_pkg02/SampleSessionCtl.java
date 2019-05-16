@@ -32,9 +32,15 @@ public class SampleSessionCtl extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 	    response.setContentType("text/html; charset=UTF-8");
 
+	    String userName = request.getParameter("UserName");
+	    String gameName = request.getParameter("GameName");
+
+	    HttpSession session = request.getSession();
+	    session.setAttribute("UserName", userName);
+	    session.setAttribute("GameName", gameName);
+
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
-		HttpSession session = request.getSession();
 
 		out.println("<html>");
 	    out.println("<head>");
@@ -42,6 +48,8 @@ public class SampleSessionCtl extends HttpServlet {
 	    out.println("</head>");
 	    out.println("<body>");
 	    out.println("<h1>セッションの生成(ページ1)</h1>");
+	    out.println("<p>あなたの名前は「"+userName+"』です。</p>");
+	    out.println("<p>好きなゲームは「"+gameName+"」です。</p>");
 	    out.println("<p>セッションIDは『"+session.getId()+"』</p>");
 	    out.println("<a href=\"SampleSessionGetServlet\">次のサーブレット呼び出し</a>");
 	    out.println("</body>");
