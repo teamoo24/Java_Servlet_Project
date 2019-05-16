@@ -47,3 +47,6 @@
 0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:57 +0900] "GET /RequestRecvPJ/SampleSessionCtl HTTP/1.1" 200 272
 0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:57 +0900] "GET /RequestRecvPJ/SampleSessionGetServlet HTTP/1.1" 200 275
 0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:58 +0900] "GET /RequestRecvPJ/SampleSessionCtl HTTP/1.1" 200 272
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:58 +0900] "GET /RequestRecvPJ/SampleSessionGetServlet HTTP/1.1" 200 275
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:59 +0900] "GET /RequestRecvPJ/SampleSessionCtl HTTP/1.1" 200 272
+0:0:0:0:0:0:0:1 - - [16/May/2019:19:29:59 +0900] "GET /RequestRecvPJ/SampleSessionGetServlet HTTP/1.1" 200 275
